@@ -11,3 +11,21 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Model views
+@import "restaurants";
+@import "reviews";
+
+#main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.remove-decoration {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.no-padding {
+  padding: 0;
+}

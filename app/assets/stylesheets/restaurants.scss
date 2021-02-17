@@ -1,3 +1,24 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.list-card {
+  padding: 10px;
+  border: 1px solid grey;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.list-card:last-child {
+  margin-bottom: 0;
+}
+
+.restaurant-link {
+  color: black;
+  font-size: 22px;
+}
+
+.restaurant-link:hover {
+  color: blue;
+}
