@@ -2,12 +2,16 @@
 <h3><%= @restaurant.category %></h3>
 <h4><%= @restaurant.phone_number %></h4>
 <h4><%= @restaurant.address %></h4>
+<br>
 <h2>Reviews</h2>
-<p>
+<ol>
   <% @restaurant.reviews.each do |review| %>
-  <%= review.content %> 
-  Rating: <%= review.rating %>
+  <li>
+    <%= review.content %> 
+    Rating: <%= review.rating %>
+  </li>
   <% end %>
-</p>
-<%= link_to "Add a new review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+</ol>
+<br>
+<%= render "review_form", { restaurant: @restaurant, review: @review } %>
 <%= link_to "Back", restaurants_path, class: "btn btn-secondary" %>
